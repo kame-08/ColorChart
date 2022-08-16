@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2AE4F22828ABF1CC005E454F /* ColorChar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorChar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE4F22828ABF1CC005E454F /* ColorChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE4F22B28ABF1CC005E454F /* ColorCharApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCharApp.swift; sourceTree = "<group>"; };
 		2AE4F22D28ABF1CC005E454F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AE4F22F28ABF1CD005E454F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		2AE4F22928ABF1CC005E454F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AE4F22828ABF1CC005E454F /* ColorChar.app */,
+				2AE4F22828ABF1CC005E454F /* ColorChart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AE4F22728ABF1CC005E454F /* ColorChar */ = {
+		2AE4F22728ABF1CC005E454F /* ColorChart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AE4F23628ABF1CD005E454F /* Build configuration list for PBXNativeTarget "ColorChar" */;
+			buildConfigurationList = 2AE4F23628ABF1CD005E454F /* Build configuration list for PBXNativeTarget "ColorChart" */;
 			buildPhases = (
 				2AE4F22428ABF1CC005E454F /* Sources */,
 				2AE4F22528ABF1CC005E454F /* Frameworks */,
@@ -109,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = ColorChar;
+			name = ColorChart;
 			productName = ColorChar;
-			productReference = 2AE4F22828ABF1CC005E454F /* ColorChar.app */;
+			productReference = 2AE4F22828ABF1CC005E454F /* ColorChart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AE4F22328ABF1CC005E454F /* Build configuration list for PBXProject "ColorChar" */;
+			buildConfigurationList = 2AE4F22328ABF1CC005E454F /* Build configuration list for PBXProject "ColorChart" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AE4F22728ABF1CC005E454F /* ColorChar */,
+				2AE4F22728ABF1CC005E454F /* ColorChart */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AE4F22328ABF1CC005E454F /* Build configuration list for PBXProject "ColorChar" */ = {
+		2AE4F22328ABF1CC005E454F /* Build configuration list for PBXProject "ColorChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AE4F23428ABF1CD005E454F /* Debug */,
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AE4F23628ABF1CD005E454F /* Build configuration list for PBXNativeTarget "ColorChar" */ = {
+		2AE4F23628ABF1CD005E454F /* Build configuration list for PBXNativeTarget "ColorChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AE4F23728ABF1CD005E454F /* Debug */,
