@@ -16,7 +16,10 @@ struct MaterialView: View {
     @State var materialName :String
     @State var material :Material
     
+    @State var flag = false
+    
     var body: some View {
+        ZStack {
             VStack {
                 HStack {
                     Text(materialName)
@@ -52,6 +55,11 @@ struct MaterialView: View {
                 Spacer()
                 
             }
+            
+            CopyView()
+                .offset(y: flag ? 0 : 100)
+                .animation(.default, value: flag)
+        }
     }
 }
 

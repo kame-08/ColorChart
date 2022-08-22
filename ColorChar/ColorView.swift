@@ -95,7 +95,6 @@ struct ColorView: View {
             .onAppear() {
                 viewModel.getColorElements(color: UIColor(color))
         }
-            
 
                 CopyView()
                 .offset(y: flag ? 0 : 100)
