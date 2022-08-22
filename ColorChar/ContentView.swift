@@ -18,11 +18,11 @@ struct ContentView: View {
                 Group {
                     
                     Section {
-                        ForEach(viewModel.color1) { coloras in
+                        ForEach(viewModel.color1) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -30,11 +30,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color2) { coloras in
+                        ForEach(viewModel.color2) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -42,11 +42,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color3) { coloras in
+                        ForEach(viewModel.color3) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -54,11 +54,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color4) { coloras in
+                        ForEach(viewModel.color4) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -66,11 +66,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color5) { coloras in
+                        ForEach(viewModel.color5) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -78,11 +78,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color6) { coloras in
+                        ForEach(viewModel.color6) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -90,11 +90,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color7) { coloras in
+                        ForEach(viewModel.color7) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -102,11 +102,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color8) { coloras in
+                        ForEach(viewModel.color8) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -114,11 +114,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color9) { coloras in
+                        ForEach(viewModel.color9) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -126,11 +126,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color10) { coloras in
+                        ForEach(viewModel.color10) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -142,11 +142,11 @@ struct ContentView: View {
                 Group {
                     
                     Section {
-                        ForEach(viewModel.color11) { coloras in
+                        ForEach(viewModel.color11) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -154,11 +154,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color12) { coloras in
+                        ForEach(viewModel.color12) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -166,11 +166,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color13) { coloras in
+                        ForEach(viewModel.color13) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -178,11 +178,11 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color14) { coloras in
+                        ForEach(viewModel.color14) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
@@ -190,28 +190,28 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        ForEach(viewModel.color15) { coloras in
+                        ForEach(viewModel.color15) { colors in
                             NavigationLink {
-                                ColorView(colorName: coloras.name, color: coloras.color)
+                                ColorView(colorName: colors.name, color: colors.color)
                             } label: {
-                                ColorCellView(colorName: coloras.name, color: coloras.color)
+                                ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
                     }header: {
                         Text("Fixed colors")
                     }
                     
-                    //                    Section {
-                    //                        ForEach(viewModel.material1) { coloras in
-                    //                            NavigationLink {
-                    //                                MaterialView(materialName: coloras.name, material: coloras.material)
-                    //                            } label: {
-                    //                                MaterialCellView(materialName: coloras.name, color: coloras.material)
-                    //                            }
-                    //                        }
-                    //                    }header: {
-                    //                        Text("Fixed colors")
-                    //                    }
+                    Section {
+                        ForEach(viewModel.material1) { materials in
+                            NavigationLink {
+                                MaterialView(materialName: materials.name, material: materials.material)
+                            } label: {
+                                MaterialCellView(materialName: materials.name, material: materials.material)
+                            }
+                        }
+                    }header: {
+                        Text("Fixed colors")
+                    }
                     
                 }
                 

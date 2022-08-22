@@ -36,32 +36,6 @@ struct MaterialView: View {
                 
                 Spacer()
                 
-                VStack (alignment: .leading) {
-                    if viewModel.RGB.white == nil {
-                        Text("red: \(viewModel.RGB.red!)")
-                        Text("green: \(viewModel.RGB.green!)")
-                        Text("blue: \(viewModel.RGB.blue!)")
-                        Text("opacity: \(viewModel.RGB.opacity)")
-                    } else{
-                        Text("white: \(viewModel.RGB.white!)")
-                        Text("opacity: \(viewModel.RGB.opacity)")
-                    }
-                }.font(.title)
-                    .onLongPressGesture {
-                        var pasteboard = ""
-                        
-                        UINotificationFeedbackGenerator().notificationOccurred(.success)
-                        
-                        if viewModel.RGB.white == nil {
-                            pasteboard = ("red: \(round(viewModel.RGB.red! * 100) / 100), green: \(round(viewModel.RGB.green! * 100) / 100), blue: \(round(viewModel.RGB.blue! * 100) / 100), opacity: \(round(viewModel.RGB.opacity * 100) / 100)")
-                        } else{
-                            pasteboard = ("white: \(round(viewModel.RGB.white! * 100) / 100), opacity: \(round(viewModel.RGB.opacity * 100) / 100)")
-                        }
-                        UIPasteboard.general.string = pasteboard
-                    }
-                
-                Spacer()
-                
                 ZStack{
                     Text(colorScheme == .light ? "黒文字" : "白文字")
                         .font(.title)
@@ -69,7 +43,9 @@ struct MaterialView: View {
                     Image(systemName: "squareshape.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .foregroundColor(.clear)
                         .background(material)
+                        .cornerRadius(14)
                         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 }
                 
