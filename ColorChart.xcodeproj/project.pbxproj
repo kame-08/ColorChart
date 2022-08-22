@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A252E3128B32B7E00213935 /* CopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A252E3028B32B7E00213935 /* CopyView.swift */; };
 		2AE4F22C28ABF1CC005E454F /* ColorCharApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4F22B28ABF1CC005E454F /* ColorCharApp.swift */; };
 		2AE4F22E28ABF1CC005E454F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4F22D28ABF1CC005E454F /* ContentView.swift */; };
 		2AE4F23028ABF1CD005E454F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE4F22F28ABF1CD005E454F /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A252E3028B32B7E00213935 /* CopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyView.swift; sourceTree = "<group>"; };
 		2AE4F22828ABF1CC005E454F /* ColorChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE4F22B28ABF1CC005E454F /* ColorCharApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCharApp.swift; sourceTree = "<group>"; };
 		2AE4F22D28ABF1CC005E454F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				2AE4F23B28ABF20C005E454F /* MaterialCellView.swift */,
 				2AE4F23D28ABF221005E454F /* ColorView.swift */,
 				2AE4F23F28ABF232005E454F /* MaterialView.swift */,
+				2A252E3028B32B7E00213935 /* CopyView.swift */,
 				2AE4F24128ABF24C005E454F /* ContentViewModel.swift */,
 				2AE4F24328ABF267005E454F /* ColorViewModel.swift */,
 				2AE4F24528ABF27A005E454F /* ColorStr.swift */,
@@ -175,6 +178,7 @@
 				2AE4F24028ABF232005E454F /* MaterialView.swift in Sources */,
 				2AE4F23C28ABF20C005E454F /* MaterialCellView.swift in Sources */,
 				2AE4F23E28ABF221005E454F /* ColorView.swift in Sources */,
+				2A252E3128B32B7E00213935 /* CopyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
