@@ -27,6 +27,7 @@ struct MaterialView: View {
                         .fontWeight(.bold)
                         .lineLimit(1)
                         .minimumScaleFactor(0.1)
+                        .textSelection(.enabled)
                     
                     Spacer()
                     
