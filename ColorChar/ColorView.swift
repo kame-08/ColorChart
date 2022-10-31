@@ -47,23 +47,31 @@ struct ColorView: View {
                             Text("opacity: \(viewModel.RGB.opacity)")
                         }
                     }.font(.title)
-                        .onLongPressGesture {
-                            var pasteboard = ""
-                            
-                            UINotificationFeedbackGenerator().notificationOccurred(.success)
-                            
-                            if viewModel.RGB.white == nil {
-                                pasteboard = ("red: \(round(viewModel.RGB.red! * 100) / 100), green: \(round(viewModel.RGB.green! * 100) / 100), blue: \(round(viewModel.RGB.blue! * 100) / 100), opacity: \(round(viewModel.RGB.opacity * 100) / 100)")
-                            } else{
-                                pasteboard = ("white: \(round(viewModel.RGB.white! * 100) / 100), opacity: \(round(viewModel.RGB.opacity * 100) / 100)")
-                            }
-                            UIPasteboard.general.string = pasteboard
-                            
-                            flag = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                flag = false
-                            }
+                HStack {
+                    
+                    Spacer()
+                    
+                    Button {
+                        var pasteboard = ""
+                        
+                        UINotificationFeedbackGenerator().notificationOccurred(.success)
+                        
+                        if viewModel.RGB.white == nil {
+                            pasteboard = ("red: \(round(viewModel.RGB.red! * 100) / 100), green: \(round(viewModel.RGB.green! * 100) / 100), blue: \(round(viewModel.RGB.blue! * 100) / 100), opacity: \(round(viewModel.RGB.opacity * 100) / 100)")
+                        } else{
+                            pasteboard = ("white: \(round(viewModel.RGB.white! * 100) / 100), opacity: \(round(viewModel.RGB.opacity * 100) / 100)")
                         }
+                        UIPasteboard.general.string = pasteboard
+                        
+                        flag = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            flag = false
+                        }
+                    } label: {
+                        Label(flag ? "コピーしました!" : "値をコピーする", systemImage: "doc.on.clipboard")
+                    }
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                }
                     
                     Spacer()
                     
