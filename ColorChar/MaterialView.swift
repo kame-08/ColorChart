@@ -33,10 +33,6 @@ struct MaterialView: View {
                     
                 }
                 .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
-                .onLongPressGesture {
-                    UINotificationFeedbackGenerator().notificationOccurred(.success)
-                    UIPasteboard.general.string = ("\(materialName)")
-                }
                 
                 Spacer()
                 
