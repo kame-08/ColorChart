@@ -70,7 +70,7 @@ struct ColorView: View {
                     } label: {
                         Label(flag ? "コピーしました!" : "値をコピーする", systemImage: "doc.on.clipboard")
                     }
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
                 }
                 
                 Spacer()
