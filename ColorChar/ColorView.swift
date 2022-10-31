@@ -16,37 +16,37 @@ struct ColorView: View {
     @State var colorName :String
     @State var color :Color
     
-     @State var flag = false
+    @State var flag = false
     
     var body: some View {
         ZStack {
             VStack {
-                    HStack {
-                        Text(colorName)
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.1)
-                            .textSelection(.enabled)
-                        
-                        Spacer()
-                        
-                    }
-                    .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
+                HStack {
+                    Text(colorName)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.1)
+                        .textSelection(.enabled)
                     
                     Spacer()
                     
-                    VStack (alignment: .leading) {
-                        if viewModel.RGB.white == nil {
-                            Text("red: \(viewModel.RGB.red!)")
-                            Text("green: \(viewModel.RGB.green!)")
-                            Text("blue: \(viewModel.RGB.blue!)")
-                            Text("opacity: \(viewModel.RGB.opacity)")
-                        } else{
-                            Text("white: \(viewModel.RGB.white!)")
-                            Text("opacity: \(viewModel.RGB.opacity)")
-                        }
-                    }.font(.title)
+                }
+                .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
+                
+                Spacer()
+                
+                VStack (alignment: .leading) {
+                    if viewModel.RGB.white == nil {
+                        Text("red: \(viewModel.RGB.red!)")
+                        Text("green: \(viewModel.RGB.green!)")
+                        Text("blue: \(viewModel.RGB.blue!)")
+                        Text("opacity: \(viewModel.RGB.opacity)")
+                    } else{
+                        Text("white: \(viewModel.RGB.white!)")
+                        Text("opacity: \(viewModel.RGB.opacity)")
+                    }
+                }.font(.title)
                 HStack {
                     
                     Spacer()
@@ -72,33 +72,29 @@ struct ColorView: View {
                     }
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 }
-                    
-                    Spacer()
-                    
-                    ZStack{
-                        Text(colorScheme == .light ? "黒文字" : "白文字")
-                            .font(.title)
-                            .aspectRatio(contentMode: .fit)
-                        Image(systemName: "squareshape.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(color)
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    }
-                    
-                    Spacer()
-                    
+                
+                Spacer()
+                
+                ZStack{
+                    Text(colorScheme == .light ? "黒文字" : "白文字")
+                        .font(.title)
+                        .aspectRatio(contentMode: .fit)
+                    Image(systemName: "squareshape.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(color)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 }
+                
+                Spacer()
+                
+            }
             .onChange(of: colorScheme, perform: { newValue in
                 viewModel.getColorElements(color: UIColor(color))
             })
             .onAppear() {
                 viewModel.getColorElements(color: UIColor(color))
-        }
-
-                CopyView()
-                .offset(y: flag ? 0 : 100)
-                .animation(.default, value: flag)
+            }
         }
     }
 }

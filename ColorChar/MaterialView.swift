@@ -52,10 +52,6 @@ struct MaterialView: View {
                 Spacer()
                 
             }
-            
-            CopyView()
-                .offset(y: flag ? 0 : 100)
-                .animation(.default, value: flag)
         }
     }
 }
