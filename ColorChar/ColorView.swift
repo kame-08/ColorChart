@@ -68,7 +68,7 @@ struct ColorView: View {
                             flag = false
                         }
                     } label: {
-                        Label(flag ? "コピーしました!" : "値をコピーする", systemImage: "doc.on.clipboard")
+                        Label(flag ? "コピーしました!" : "値をコピーする", systemImage: flag ? "checkmark" : "doc.on.doc")
                     }
                     .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
                 }
