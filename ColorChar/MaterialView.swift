@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct MaterialView: View {
-    //ダークモード判定
+    // ダークモード判定
     @Environment(\.colorScheme) var colorScheme
-    
     @ObservedObject var viewModel = ColorViewModel()
-    
-    @State var materialName :String
-    @State var material :Material
-    
+    @State var materialName: String
+    @State var material: Material
     @State var flag = false
     
     var body: some View {
@@ -30,13 +27,12 @@ struct MaterialView: View {
                         .textSelection(.enabled)
                     
                     Spacer()
-                    
                 }
                 .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
                 
-                ZStack{
+                ZStack {
                     Text(colorScheme == .light ? "黒文字" : "白文字")
                         .font(.title)
                         .aspectRatio(contentMode: .fit)
@@ -46,11 +42,10 @@ struct MaterialView: View {
                         .foregroundColor(.clear)
                         .background(material)
                         .cornerRadius(14)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        .padding(/*@START_MENU_TOKEN@*/ .all/*@END_MENU_TOKEN@*/)
                 }
                 
                 Spacer()
-                
             }
         }
     }

@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ColorCellView: View {
-    //ダークモード判定
+    // ダークモード判定
     @Environment(\.colorScheme) var colorScheme
     @State var colorName: String
     @State var color: Color
-    
+
     var body: some View {
-        HStack{
+        HStack {
             HStack {
                 Text(colorName)
                     .lineLimit(1)
                     .minimumScaleFactor(0.1)
                 Spacer()
             }
-            ZStack{
+            ZStack {
                 Text(colorScheme == .light ? "黒文字" : "白文字")
                 RoundedRectangle(cornerRadius: 10)
                     .fill(color)

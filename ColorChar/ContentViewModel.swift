@@ -8,9 +8,8 @@
 import Foundation
 import SwiftUI
 
-class ContentViewModel : ObservableObject {
-    
-    //Standard colors
+class ContentViewModel: ObservableObject {
+    // Standard colors
     let color1 = [
         ColorStr(name: ".black", color: .black),
         ColorStr(name: ".blue", color: .blue),
@@ -27,17 +26,17 @@ class ContentViewModel : ObservableObject {
         ColorStr(name: ".red", color: .red),
         ColorStr(name: ".teal", color: .teal),
         ColorStr(name: ".white", color: .white),
-        ColorStr(name: ".yellow", color: .yellow),
+        ColorStr(name: ".yellow", color: .yellow)
     ]
     
-    //Semantic colors
+    // Semantic colors
     let color2 = [
         ColorStr(name: ".accentColor", color: .accentColor),
         ColorStr(name: ".primary", color: .primary),
         ColorStr(name: ".secondary", color: .secondary)
     ]
     
-    //Label colors
+    // Label colors
     let color3 = [
         ColorStr(name: ".label", color: Color(.label)),
         ColorStr(name: ".secondaryLabel", color: Color(.secondaryLabel)),
@@ -45,7 +44,7 @@ class ContentViewModel : ObservableObject {
         ColorStr(name: ".quaternaryLabel", color: Color(.quaternaryLabel))
     ]
     
-    //Fill colors
+    // Fill colors
     let color4 = [
         ColorStr(name: ".systemFill", color: Color(.systemFill)),
         ColorStr(name: ".secondarySystemFill", color: Color(.secondarySystemFill)),
@@ -53,48 +52,48 @@ class ContentViewModel : ObservableObject {
         ColorStr(name: ".quaternarySystemFill", color: Color(.quaternarySystemFill))
     ]
     
-    //Text colors
+    // Text colors
     let color5 = [
         ColorStr(name: ".placeholderText", color: Color(.placeholderText))
     ]
     
-    //Tint color
+    // Tint color
     let color6 = [
         ColorStr(name: ".tintColor", color: Color(.tintColor))
     ]
     
-    //Standard content background colors
+    // Standard content background colors
     let color7 = [
         ColorStr(name: ".systemBackground", color: Color(.systemBackground)),
         ColorStr(name: ".secondarySystemBackground", color: Color(.secondarySystemBackground)),
         ColorStr(name: ".tertiarySystemBackground", color: Color(.tertiarySystemBackground))
     ]
     
-    //Grouped content background colors
+    // Grouped content background colors
     let color8 = [
         ColorStr(name: ".systemGroupedBackground", color: Color(.systemGroupedBackground)),
         ColorStr(name: ".secondarySystemGroupedBackground", color: Color(.secondarySystemGroupedBackground)),
         ColorStr(name: ".tertiarySystemGroupedBackground", color: Color(.tertiarySystemGroupedBackground))
     ]
     
-    //Separator colors
+    // Separator colors
     let color9 = [
         ColorStr(name: ".separator", color: Color(.separator)),
         ColorStr(name: ".opaqueSeparator", color: Color(.opaqueSeparator))
     ]
     
-    //Link color
+    // Link color
     let color10 = [
         ColorStr(name: ".link", color: Color(.link))
     ]
     
-    //Nonadaptable colors
+    // Nonadaptable colors
     let color11 = [
         ColorStr(name: ".darkText", color: Color(.darkText)),
         ColorStr(name: ".lightText", color: Color(.lightText))
     ]
     
-    //Adaptable colors
+    // Adaptable colors
     let color12 = [
         ColorStr(name: ".systemBlue", color: Color(.systemBlue)),
         ColorStr(name: ".systemBrown", color: Color(.systemBrown)),
@@ -110,7 +109,7 @@ class ContentViewModel : ObservableObject {
         ColorStr(name: ".systemYellow", color: Color(.systemYellow))
     ]
     
-    //Adaptable gray colors
+    // Adaptable gray colors
     let color13 = [
         ColorStr(name: ".systemGray", color: Color(.systemGray)),
         ColorStr(name: ".systemGray2", color: Color(.systemGray2)),
@@ -120,12 +119,12 @@ class ContentViewModel : ObservableObject {
         ColorStr(name: ".systemGray6", color: Color(.systemGray6))
     ]
     
-    //Transparent color
+    // Transparent color
     let color14 = [
         ColorStr(name: ".clear", color: Color(.clear))
     ]
     
-    //Fixed colors
+    // Fixed colors
     let color15 = [
         ColorStr(name: ".black", color: Color(.black)),
         ColorStr(name: ".blue", color: Color(.blue)),
@@ -140,7 +139,7 @@ class ContentViewModel : ObservableObject {
         ColorStr(name: ".purple", color: Color(.purple)),
         ColorStr(name: ".red", color: Color(.red)),
         ColorStr(name: ".white", color: Color(.white)),
-        ColorStr(name: ".yellow", color: Color(.yellow)),
+        ColorStr(name: ".yellow", color: Color(.yellow))
     ]
     
     let material1 = [
@@ -151,5 +150,4 @@ class ContentViewModel : ObservableObject {
         MaterialStr(name: ".ultraThick", material: .ultraThick),
         MaterialStr(name: ".bar", material: .bar)
     ]
-    
 }

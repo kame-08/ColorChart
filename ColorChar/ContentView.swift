@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @ObservedObject var viewModel = ContentViewModel()
     
     var body: some View {
         NavigationView {
             List {
-                
                 Group {
-                    
                     Section {
                         ForEach(viewModel.color1) { colors in
                             NavigationLink {
@@ -25,7 +22,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Standard colors")
                     }
                     
@@ -37,7 +34,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Semantic colors")
                     }
                     
@@ -49,7 +46,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Label colors")
                     }
                     
@@ -61,7 +58,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Fill colors")
                     }
                     
@@ -73,7 +70,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Text colors")
                     }
                     
@@ -85,7 +82,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Tint color")
                     }
                     
@@ -97,7 +94,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Standard content background colors")
                     }
                     
@@ -109,7 +106,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Grouped content background colors")
                     }
                     
@@ -121,7 +118,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Separator colors")
                     }
                     
@@ -133,14 +130,12 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Link color")
                     }
-                    
                 }
                 
                 Group {
-                    
                     Section {
                         ForEach(viewModel.color11) { colors in
                             NavigationLink {
@@ -149,7 +144,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Nonadaptable colors")
                     }
                     
@@ -161,7 +156,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Adaptable colors")
                     }
                     
@@ -173,7 +168,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Adaptable gray colors")
                     }
                     
@@ -185,7 +180,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Transparent color")
                     }
                     
@@ -197,7 +192,7 @@ struct ContentView: View {
                                 ColorCellView(colorName: colors.name, color: colors.color)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Fixed colors")
                     }
                     
@@ -209,15 +204,13 @@ struct ContentView: View {
                                 MaterialCellView(materialName: materials.name, material: materials.material)
                             }
                         }
-                    }header: {
+                    } header: {
                         Text("Fixed colors")
                     }
-                    
                 }
                 
             }.listStyle(.plain)
                 .clipped()
-            
         }
     }
 }

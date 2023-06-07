@@ -8,14 +8,12 @@
 import Foundation
 import SwiftUI
 
-class ColorViewModel : ObservableObject {
-    
+class ColorViewModel: ObservableObject {
     private let model = ColorElements()
     
-    @Published var RGB:(red:CGFloat?, green:CGFloat?, blue:CGFloat?, white:CGFloat?, opacity:CGFloat) = (0,0,0,nil,0)
+    @Published var RGB: (red: CGFloat?, green: CGFloat?, blue: CGFloat?, white: CGFloat?, opacity: CGFloat) = (0, 0, 0, nil, 0)
     
-    func getColorElements (color: UIColor) {
+    func getColorElements(color: UIColor) {
         RGB = model.getColorElements(color: color)
     }
-    
 }
