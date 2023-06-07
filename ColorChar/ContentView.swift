@@ -216,6 +216,7 @@ struct ContentView: View {
                 }
                 
             }.listStyle(.plain)
+                .clipped()
             
         }
     }
